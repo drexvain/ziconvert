@@ -1,4 +1,5 @@
 # inspired frm tiktok
-![aperçu](https://i.imgur.com/LnZaFg1.png)
-![aperçu](https://imgur.com/a/iuQHVBR.png).
-
+https://imgur.com/a/7sNix4B
+![tool screenshot](https://i.imgur.com/JsCJVaA.png)
+https://imgur.com/a/7sNix4B
+![tool screenshot](https://imgur.com/a/7sNix4B)
