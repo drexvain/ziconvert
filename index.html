@@ -1,0 +1,121 @@
+# abcd
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ziconvert</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app">
+  
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <h1 class="logo gradient-text">ziconvert</h1>
+          <div class="pulse-slow">drxvain</div>
+        </div>
+      </div>
+    </header>
+
+ 
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content fade-in-up">
+          <h2 class="hero-title gradient-text float">ziconvert</h2>
+          <p class="hero-subtitle typewriter">track cryptos with cg api ❤</p>
+        </div>
+
+        <div class="search-container">
+          <div class="search-wrapper search-glow">
+            <input type="text" id="searchInput" class="search-input border-pulse" placeholder="search cryptos">
+            <button class="search-button bounce-subtle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="spin-slow">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <div id="searchResults" class="search-results slide-down hidden"></div>
+        </div>
+      </div>
+    </section>
+
+    <
+    <section id="cryptoDetails" class="crypto-details hidden">
+      <div class="container">
+        <div class="card slide-up">
+          <div class="card-header">
+            <div class="crypto-info fade-in-left">
+              <img id="cryptoImage" src="/placeholder.svg" alt="" class="crypto-image spin-slow">
+              <div>
+                <h3 id="cryptoName" class="crypto-title glow"></h3>
+                <p id="cryptoSymbol" class="crypto-symbol pulse-slow"></p>
+              </div>
+            </div>
+            <div class="time-range fade-in-right">
+              <button id="oneMonth" class="time-button active pulse-purple">1 month</button>
+              <button id="sixMonths" class="time-button">6 months</button>
+            </div>
+          </div>
+          <div class="card-content">
+           
+            <div class="stats-grid">
+              <div class="stat-card fade-in-stagger">
+                <p class="stat-label pulse-slow">price rn</p>
+                <p id="currentPrice" class="stat-value pulse-price"></p>
+              </div>
+              <div class="stat-card fade-in-stagger" style="animation-delay: 100ms;">
+                <p class="stat-label pulse-slow">24h change</p>
+                <div class="trend">
+                  <span id="priceChange24hIcon"></span>
+                  <p id="priceChange24h" class="stat-value pulse-price"></p>
+                </div>
+              </div>
+              <div class="stat-card fade-in-stagger" style="animation-delay: 200ms;">
+                <p class="stat-label pulse-slow">30d change</p>
+                <p id="priceChange30d" class="stat-value pulse-price"></p>
+              </div>
+              <div class="stat-card fade-in-stagger" style="animation-delay: 300ms;">
+                <p class="stat-label pulse-slow">market cap</p>
+                <p id="marketCap" class="stat-value pulse-price"></p>
+              </div>
+            </div>
+
+          
+            <div class="chart-container chart-glow">
+              <h3 class="chart-title glow">price chart (<span id="timeRangeText">1 month</span>)</h3>
+              <div id="loadingIndicator" class="loading-indicator hidden">
+                <div class="spinner spin-fast"></div>
+              </div>
+              <canvas id="priceChart" height="400"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+ 
+    <section id="popularCryptos" class="popular-cryptos">
+      <div class="container">
+        <h2 class="section-title glow">popular cryptos rn</h2>
+        <div id="cryptoGrid" class="crypto-grid"></div>
+      </div>
+    </section>
+
+   
+    <footer class="footer">
+      <div class="container">
+        <p class="footer-text pulse-slow">powered by da cg api</p>
+        <p class="footer-subtext fade-in">made by drexvain w help of yt for sum animations, big inspiration of a website i saw on tiktok,tried to remake it also made the animations w yt tutorials dont know if they good i know theres is too much for sources of vids contact me</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
